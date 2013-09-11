@@ -15,7 +15,7 @@ object Hello {
         Console println "Nul :'("
       val model = new TokenizerModel(is)
       val tokenizer = new TokenizerME(model)
-      val result = tokenizer.tokenize("This is the fox, eating the duck.")
+      val result = tokenizer.tokenize("I'm testing Jenkins.")
       Console println result.mkString(" ")
     } catch {
       case ioe: IOException => throw ioe
