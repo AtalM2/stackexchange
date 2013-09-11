@@ -3,3 +3,7 @@
 /target/*
 /project/*
 !/project/plugins.sbt
+
+.classpath
+.project
+.cache
