@@ -1,5 +1,6 @@
 *~
 
+/src/main/resources/pg/passwd
 /data/*
 /target/*
 /project/*
