@@ -5,6 +5,7 @@ import java.io.InputStream
 import java.io.IOException
 import opennlp.tools.tokenize.TokenizerME
 import opennlp.tools.tokenize.TokenizerModel
+import fr.univnantes.atal.stackexchange.persistence.Database
 
 object Hello {
   def main(args: Array[String]) = {
@@ -17,6 +18,8 @@ object Hello {
       val tokenizer = new TokenizerME(model)
       val result = tokenizer.tokenize("I'm testing Jenkins.")
       Console println result.mkString(" ")
+      Database.setup
+      Database.close
     } catch {
       case ioe: IOException => throw ioe
       case e: Exception => throw e
