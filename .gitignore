@@ -1,5 +1,6 @@
 *~
 
+/data/*
 /target/*
 /project/*
 !/project/plugins.sbt
